@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Zaid Faizal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0d1117;
+            color: #ffffff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #161b22;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header a {
+            color: #58a6ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #1f6feb;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 90vh;
+            padding: 0 50px;
+        }
+        .intro {
+            max-width: 50%;
+        }
+        .intro h1 {
+            font-size: 48px;
+        }
+        .intro h1 span {
+            color: #58a6ff;
+        }
+        .intro p {
+            margin: 20px 0;
+            line-height: 1.6;
+            color: #c9d1d9;
+        }
+        .intro .about-me {
+            margin-top: 20px;
+            color: #c9d1d9;
+            font-size: 18px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .buttons .hire {
+            background: #58a6ff;
+            color: #ffffff;
+        }
+        .buttons .talk {
+            border: 1px solid #58a6ff;
+            color: #58a6ff;
+        }
+        .buttons a:hover {
+            opacity: 0.9;
+        }
+        .image-container img {
+            max-width: 400px;
+            border-radius: 20px;
+        }
+        section {
+            padding: 50px;
+            background: #161b22;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        section h2 {
+            color: #58a6ff;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #0d1117;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        form label {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #58a6ff;
+            border-radius: 5px;
+            background: #0d1117;
+            color: #ffffff;
+        }
+        form button {
+            background: #58a6ff;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        form button:hover {
+            opacity: 0.9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #161b22;
+            color: #c9d1d9;
+        }
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Zaid Faizal</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div id="home" class="container">
+        <div class="intro">
+            <h1>Hi, I'm <span>Zaid Faizal</span><br>Frontend Developer</h1>
+            <p>LI am a passionate programmer with a keen eye for detail and a love for building functional, user-friendly websites. With years of experience in web development, I specialize in crafting responsive and modern web applications that cater to diverse client needs.</p>
+            <div class="about-me">
+            </div>
+            <div class="buttons">
+                <a href="#contact" class="hire">Hire Me</a>
+                <a href="#contact" class="talk">Let's Talk</a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="Zaid Faizal.jpeg" alt="Profile Picture">
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a frontend developer with a strong foundation in modern web technologies. I thrive on solving problems and delivering clean, efficient code that brings ideas to life.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Web Design and Development</li>
+            <li>Responsive Websites</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Check out some of my recent projects:</p>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work with me or have any questions, feel free to reach out!</p>
+        <form action="https://formsubmit.co/zaidfaizal413@gmail.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Zaid Faizal | <a href="#">LinkedIn</a> <a href="#">GitHub</a> <a href="#">Twitter</a></p>
+    </footer>
+</body>
+</html>
